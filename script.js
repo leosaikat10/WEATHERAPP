@@ -33,6 +33,7 @@
     } else if (data.weather[0].main == "Mist") {
       weatherIcon.src = "images/mist.png";
     }
+    document.querySelector(".weather").style.display = "block";
   }
 
   searchBtn.addEventListener("click", () => {
