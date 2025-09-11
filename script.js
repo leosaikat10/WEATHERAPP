@@ -6,7 +6,7 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weathericon");
 const card = document.querySelector(".card");
 
-
+// for updating the background 
 function updateBackground(condition) {
   const body = document.body;
 
@@ -30,7 +30,7 @@ function updateBackground(condition) {
     card.style.background = "rgba(255, 255, 255, 0.15)";
   }
 }
-
+ // for checking the function 
 async function checkWeather(city) {
   const response = await fetch(apiURL + city + `&appid=${apikey}`);
   
